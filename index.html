@@ -1,11 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Portfólió</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <a class="header-logo" href="#fooldal">Denem Tom</a>
+        <ul class="nav-list">
+            <li class="nav-list_elem" ><a href="#fooldal">Főoldal</a></li>
+            <li class="nav-list_elem" ><a href="#rolam">Rólam</a></li>
+            <li class="nav-list_elem" ><a href="#portfolio">Portfólió</a></li>
+            <li class="nav-list_elem" ><a href="#kapcsolat">Kapcsolat</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section id="fooldal">
+            <div class="fooldal-container">
+                <h1 class="fooldal-container_nev">Donem Tom</h1>
+                <h2 class="fooldal-container_foglalkozas">Frontend webfejlesztő</h2>
+                <button class="fooldal-container_gomb">Kapcsolat</button>
+            </div>
+
+            <img class="" src="./assets/main.png" alt="Denem Tom">
+        </section>
+
+
+
+        <section id="rolam">
+            <h2 class="rolam-cim">Rólam</h2>
+            <div class="rolam-container">
+                <div class="rolam-kepesegek">
+                    <img src="./assets/main.png" alt="Denem Tom">
+                    <div class="rolam-kepesegek-container">
+                        <p class="rolam-kepesegek-cim"></p>
+                        <ul class="rolam-kepesegek_lista">
+                            <li class="rolam-kepesegek_elem">HTML</li>
+                            <li class="rolam-kepesegek_elem">CSS</li>
+                            <li class="rolam-kepesegek_elem">JavaScript</li>
+                            <li class="rolam-kepesegek_elem">Wordpress</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="rolam-tartalom">
+                    <h4 class="rolam-tatalom_udv">Hello, az én nevem</h4>
+                    <h3 class="rolam-tartalom_nev">Denem Tom</h3>
+                    <h4 class="rolam-tatalom_udv">Frontend webfejlesztő</h4>
+                    <p class="rolam-tartalom_szoveg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                        doloremque quasi commodi quam labore voluptas blanditiis officia ipsa quae dolores? Ad dolores
+                        doloribus vel est corporis maxime, iusto vero. Qui!
+                    </p>
+                    <div class="rolam-tartalom_container">
+                        <button class="rolam-tartalom_gomb">Kapcsolat</button>
+                        <button class="rolam-tartalom_gomb">Önéletrajz</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section id="portfolio">
+            <h2 class="portfolio-cim">Portfólió</h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-project">
+                    <img src="./assets/Project.jpg" alt="Az én projektem">
+                    <div class="portfolio-projekt-container">
+                        <h3>protfólió oldal</h3>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-container">
+                <div class="portfolio-project">
+                    <img src="./assets/Project.jpg" alt="Az én projektem">
+                    <div class="portfolio-projekt-container">
+                        <h3>protfólió oldal</h3>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-container">
+                <div class="portfolio-project">
+                    <img src="./assets/Project.jpg" alt="Az én projektem">
+                    <div class="portfolio-projekt-container">
+                        <h3>protfólió oldal</h3>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-container">
+                <div class="portfolio-project">
+                    <img src="./assets/Project.jpg" alt="Az én projektem">
+                    <div class="portfolio-projekt-container">
+                        <h3>protfólió oldal</h3>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section id="kapcsolat">
+            <h2 class="kapcsolat-cim">Kapcsolat</h2>
+            <h3 class="kapcsolat-szoveg">Lépj velem kapcsolatba</h3>
+
+            <form action="#" method="post">
+                <input type="text" id="nev" name="nev" placeholder="Név">
+                <input type="email" id="email" placeholder="Email">
+                <textarea name="message" id="message" placeholder="Üzenet"></textarea>
+                <input type="submit" value="Küld">
+            </form>
+
+            <ul class="kapcsolat-social">
+                <li class="kapcsolat-social_elem"><a href="https://www.twitter.com" target="_blank"><i
+                            class="fa-brands fa-twitter"></i></a></li>
+                <li class="kapcsolat-social_elem"><a href="https://www.linkedin.com" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a></li>
+                <li class="kapcsolat-social_elem"><a href="https://www.github.com" target="_blank"><i
+                            class="fa-brands fa-github-alt"></i></a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <p>Copyright</p>
+            <div>&copy;</div>
+            <p>2024 Thomas Horvath</p>
+        </div>
+        <div><a href="#fooldal"><i class="fa-solid fa-chevron-up"></i></a></div>
+    </footer>
 </body>
+
 </html>
