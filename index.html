@@ -19,6 +19,7 @@
 
 
     <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/header.css">
     <title>Portfólió</title>
 </head>
 
@@ -26,12 +27,23 @@
 
     <header>
         <a class="header-logo" href="#fooldal">Denem Tom</a>
-        <ul class="nav-list">
-            <li class="nav-list_elem"><a href="#fooldal">Főoldal</a></li>
-            <li class="nav-list_elem"><a href="#rolam">Rólam</a></li>
-            <li class="nav-list_elem"><a href="#portfolio">Portfólió</a></li>
-            <li class="nav-list_elem"><a href="#kapcsolat">Kapcsolat</a></li>
-        </ul>
+        <nav>
+            <input type="checkbox" class="nav-checkbox" id="nav-checkbox">
+            <label for="nav-checkbox">
+                <div class="nav-checkbox-gomb">
+                    <div class="nav-checkbox-vonal"></div>
+                    <div class="nav-checkbox-vonal"></div>
+                    <div class="nav-checkbox-vonal"></div>
+                </div>
+            </label>
+
+            <ul class="nav-list">
+                <li class="nav-list-elem"><a href="#fooldal">Főoldal</a></li>
+                <li class="nav-list-elem"><a href="#rolam">Rólam</a></li>
+                <li class="nav-list-elem"><a href="#portfolio">Portfólió</a></li>
+                <li class="nav-list-elem"><a href="#kapcsolat">Kapcsolat</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>

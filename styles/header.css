@@ -1,0 +1,99 @@
+header {
+    background: var(--orange);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    padding: 2%;
+    font-weight: bold;
+}
+
+.header-logo {
+    font-family: var(--logo-font);
+    color: var(--black);
+}
+
+
+
+.nav-checkbox {
+    display: none;
+}
+
+.nav-checkbox-gomb {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-checkbox-vonal {
+    width: 25px;
+    height: 3px;
+    background: var(--black);
+
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 50vw;
+    min-width: 150px;
+    max-width: 200px;
+    right: -200px;
+    visibility: hidden;
+    background: var(--orange);
+    transition: right .4s, visibility .4s ease;
+}
+
+.nav-list-elem {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list-elem a {
+    color: var(--black);
+    padding: 20px 0;
+    margin: 2vh 0;
+}
+
+.nav-checkbox:checked~.nav-list {
+    right: 0;
+    visibility: visible;
+}
+
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {
+
+    .nav-checkbox-gomb {
+        display: none;
+    }
+
+    .nav-list {
+        justify-content: space-evenly;
+        visibility: visible;
+        position: static;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 70vw;
+        max-width: 70vw;
+    }
+
+    .nav-list-elem a {
+        margin: 0;
+        padding: 2px 0;
+    }
+}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {}
