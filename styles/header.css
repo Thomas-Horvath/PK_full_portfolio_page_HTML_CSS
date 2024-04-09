@@ -5,8 +5,9 @@ header {
     align-items: center;
     position: fixed;
     width: 100vw;
-    padding: 2%;
+    padding: 10px;
     font-weight: bold;
+    z-index: 10;
 }
 
 .header-logo {
